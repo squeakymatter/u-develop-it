@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
   })
 })
 
+//test connect to database by using SQLite method to execute SQL commands:
+db.all(`SELECT * FROM candidates`, (err, rows) => {
+  console.log(rows)
+})
 //default response for any other request (not found) - catch all
 app.use((req, res) => {
   res.status(404).end()
