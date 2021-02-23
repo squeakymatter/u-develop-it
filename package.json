@@ -1,8 +1,11 @@
 {
-  "name": "u-develop-it",
+  "name": "vote-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Back-end APIs for a voting app.",
+  "main": "server.js",
+  "devDependencies": {
+    "jest": "^25.5.4"
+  },
   "scripts": {
     "test": "jest",
     "migrate": "sqlite3 db/election.db < db/schema.sql",
@@ -10,22 +13,19 @@
     "db": "sqlite3 db/election.db",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/squeakymatter/u-develop-it.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/squeakymatter/u-develop-it/issues"
-  },
-  "homepage": "https://github.com/squeakymatter/u-develop-it#readme",
   "dependencies": {
     "express": "^4.17.1",
     "sqlite3": "^5.0.2"
   },
-  "devDependencies": {
-    "jest": "^26.6.3"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squeakymatter/u-develop-it.git"
+  },
+  "bugs": {
+    "url": "https://github.com/squeakymatter/u-develop-it/issues"
+  },
+  "homepage": "https://github.com/squeakymatter/u-develop-it#readme"
 }
